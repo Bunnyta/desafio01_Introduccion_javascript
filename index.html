@@ -12,29 +12,29 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="d-flex justify-content-center">
     <div class="card" style="width: 30rem;">
-        <div class="card_img">
+        <div class="card_img text-center pt-1 pb-1">
             <img src="assets/img/computer_gamer_msi_bravo_15.jpg" class="card-img-top m-3"
                 alt="Computer_Gamer_MSIBravo15">
         </div>
         <div class="mainCard text-center">
             <h4 class="card-title text-center">Laptop Gamer MSI Bravo 15</h4>
             <h5 class="Price">Precio; $400000</h5>
-            <p class="card-text">Elige Cantidad:</p>
-            <input id="Amount" type="number" placeholder="Cantidad">
-            <p class="card-text mt-2">Elige Color:</p>
-            <input id="Color" type="color" placeholder="color">
+            <p class="card-text mb-0">Elige Cantidad:</p>
+            <input id="inputAmount" type="number" placeholder="Cantidad">
+            <p class="card-text mt-2 mb-0">Elige Color:</p>
+            <input id="inputColor" type="text" placeholder="color">
             <br>
-            <button class="btn btn-primary m-2">Calcular Total</button>
+            <button class="btn btn-warning mt-3" onclick="calcular()">Calcular Total</button>
             <hr>
         </div>
         <div class="secondaryCard text-center">
-            <p class="secondaryCard_amount_price">Precio Total: $<span>0</span></p>
-            <p class="secondaryCard_amount"> Cantidad: <span>0</span></p>
-            <div class="secondaryCard_color">
+            <p class="totalPrice">Precio Total: $<span>0</span></p>
+            <p class="totalAmount"> Cantidad: <span>0</span></p>
+            <div class="Color">
                 <p>Color elegido:</p>
-                <div class="secondaryCard_chosen_color"></div>
+                <div class="chosenColor"></div>
             </div>
         </div>
     </div>
